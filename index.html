@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+
+        <div class="inner_part">
+
+          <dvi class="search_form">
+              <form onsubmit="return false;">
+            <input id='inp' type="text" placeholder="">
+            </form>
+            <div class="scopePicture"><img src="scope.svg"></div>
+          </dvi>
+
+        <div class="content">
+
+            <div class="left_part">
+
+                <div class="display_left" id='showNow'>
+                   <div class="forPosition">
+                    <div class="temp"><p class='bigNumber'></p></div>
+                    <div class="bigCloudPicture"><img src="big_cloud.svg"></div>
+                    <div class="cityName"><p class="text smalSityName"></p></div>
+                    <div class="heart_picture"><img src="heart.svg" alt=""></div>
+                   </div>
+                </div> 
+
+                <div class="display_left" id='showDetails'>
+                    <p class="text showDetailsHeader">Actobe</p>
+                    <p class="text">Temperature: 13°</p>
+                    <p class="text">Feels life: 10°</p>
+                    <p class="text">Weather: Clouds</p>
+                    <p class="text">Sunrise: 03:21</p>
+                    <p class="text">Sunset: 18:54</p>
+                </div>
+
+                 <div class="display_left" id='showForecast'>
+                    <p class="text forecastHeader">Actobe</p>
+                    <div class="weather_window twelve">
+                        <div class="date smalText"><p>17 May</p></div>
+                        <div class="time smalText"><p>12.00</p></div>
+                        <div class="temperature smalText"><p>Temperature:13°</p></div>
+                        <div class="feelsLike smalText"> Feels like: 10°</div>
+                        <div class="pictureHeader smalText">Rain</div>
+                        <div class="picture"><img src="rain.svg"></div>
+                    </div>
+
+                    <div class="weather_window fifteen">
+                        <div class="date smalText"><p>17 May</p></div>
+                        <div class="time smalText"><p>15.00</p></div>
+                        <div class="temperature smalText"><p>Temperature:13°</p></div>
+                        <div class="feelsLike smalText"> Feels like: 10°</div>
+                        <div class="pictureHeader smalText">Rain</div>
+                        <div class="picture"><img src="rain.svg"></div>
+                    </div>
+                    
+                    <div class="weather_window nineteen">
+                        <div class="date smalText"><p>17 May</p></div>
+                        <div class="time smalText"><p>18.00</p></div>
+                        <div class="temperature smalText"><p>Temperature:13°</p></div>
+                        <div class="feelsLike smalText"> Feels like: 10°</div>
+                        <div class="pictureHeader smalText">Rain</div>
+                        <div class="picture"><img src="rain.svg"></div>
+                    </div>
+                </div>   
+
+                <div class="buttons">
+                    <div class="now button  smalText">
+                        <p class="nowP">Now</p>
+                    </div>
+                    <div class="button details smalText">
+                        <p class="detailsP">Details</p>
+                    </div>
+                    <div class="button forecast smalText">
+                        <p class="forecastP">Forecast</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="right_part">
+                
+                <div class="right_header">
+                    <p class=" text right_headerText">Added Locations</p>
+                </div>
+                <div class="display_right">
+
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
