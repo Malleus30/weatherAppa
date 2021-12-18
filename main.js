@@ -7,7 +7,7 @@ let addedLocationsArray =[];
 let globalCityName;
 
   UI.btn.addEventListener('click',change);
-  UI.cloudPicture.style.display= 'none';
+
   UI.heart_picture.style.display = 'none';
   UI.heart_picture.addEventListener('click', addLocationFunc);
 
@@ -25,6 +25,10 @@ let globalCityName;
   function deleteLocationFunc(){
 
   this.parentElement.remove();
+
+    addedLocationsArray.splice(addedLocationsArray.indexOf(this.previousElementSibling.textContent), 1);
+
+    
   }
   
 
@@ -79,12 +83,15 @@ showForecast.style.display = 'none';
             return response.json();    
         })
         .then((data) =>{
-          
-          if(data.weather[0].main === 'Clear') {
-                UI.cloudPicture.style.display='none';
-          }else{
-              UI.cloudPicture.style.display ='block';
-          }
+            
+            console.log(data.weather[0].id);
+
+
+           
+            
+            
+
+            UI.bigCloudIcon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`
             UI.bigNumber.textContent = Math.round(data.main.temp-273);
             UI.bigNumber.textContent +='°'; 
 
@@ -92,6 +99,8 @@ showForecast.style.display = 'none';
             UI.smalSityName.textContent = data.name;
 
             globalCityName = UI.smalSityName.textContent;
+
+            console.log(data);
             
         })
         .catch(error => alert(error.message))

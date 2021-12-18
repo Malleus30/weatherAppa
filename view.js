@@ -4,5 +4,6 @@ export  const UI = {
     cloudPicture :  document.querySelector(".bigCloudPicture"),
     smalSityName : document.querySelector('.smalSityName'),
     heart_picture : document.querySelector('.heart_picture'),
-    displayRightDiv : document.querySelector('.display_right')
+    displayRightDiv : document.querySelector('.display_right'),
+    bigCloudIcon : document.querySelector('.bigCloudIcon')
 }
