@@ -5,5 +5,11 @@ export  const UI = {
     smalSityName : document.querySelector('.smalSityName'),
     heart_picture : document.querySelector('.heart_picture'),
     displayRightDiv : document.querySelector('.display_right'),
-    bigCloudIcon : document.querySelector('.bigCloudIcon')
+    bigCloudIcon : document.querySelector('.bigCloudIcon'),
+    showDetailsHeader : document.querySelector('.showDetailsHeader'),
+    detailsTemp : document.querySelector('.detailsTemp'),
+    detailsFeels : document.querySelector('.detailsFeels'),
+    detailsWeather : document.querySelector('.detailsWeather'),
+    detailsSunrise : document.querySelector('.detailsSunrise'),
+    detailsSunset : document.querySelector('.detailsSunset'),
 }
